@@ -1,0 +1,193 @@
+.form-title h2 {
+    padding: 31px 0;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title-name,
+.location-jobtype,
+.salary-deadline,
+.job-description {
+    display: flex;
+    justify-content: space-around;
+    padding: 29px 40px 0px 40px;
+    gap: 16px;
+}
+
+.title-name {
+    margin-bottom: -23px;
+}
+
+.location-jobtype {
+    margin-top: -14px;
+}
+
+.salary-deadline {
+    margin-top: -13px;
+}
+
+.job-description {
+    margin-top: -20px;
+    flex-direction: column;
+}
+
+
+.job-description ::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -3px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 32px;
+    gap: 230px;
+}
+
+.input-content {
+    display: flex;
+    width: 376px;
+    flex-direction: column;
+}
+
+
+.input-content ::placeholder {
+    font-weight: 16px;
+    font-weight: 500;
+}
+
+
+
+label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.input-content input,
+.save-draft {
+    border: 1px solid #BCBCBC;
+    margin: 8px auto;
+    width: 376px;
+    height: 58px;
+    font-size: 18px;
+    /* font-weight: 600; */
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.input-content input:hover {
+    border: 1px solid black;
+}
+
+.input-content input:focus {
+    border: '1px solid black'
+}
+
+.save-draft {
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-buttons button:first-child {
+    width: 230px;
+    margin-left: 40px;
+}
+
+.form-buttons button:last-child {
+    width: 206px;
+    color: white;
+    border: none;
+    margin-right: 40px;
+    background-color: #1c9cce;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+}
+
+.salary-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #BCBCBC;
+    border-radius: 8px;
+    padding: 0 15px;
+    margin-top: 5px;
+    height: 57px;
+    width: 183px;
+    overflow: hidden;
+
+}
+
+.salary-input:hover {
+    border: 1px solid black;
+}
+
+.salary-input2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #BCBCBC;
+    border-radius: 8px;
+    margin-left: 9px;
+    padding: 0 15px;
+    margin-top: 5px;
+    height: 57px;
+    width: 187px;
+    overflow: hidden
+}
+
+.salary-input2:hover {
+    border: 1px solid black;
+}
+
+.deadline-input {
+    width: 100%;
+    height: 57px;
+    padding: 10px 40px 10px 14px;
+    margin-top: "5px";
+    font-size: 16px;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    font-family: inherit;
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.deadline-input:hover {
+    border: 1px solid black;
+}
+
+.textarea-input {
+    margin-top: -9px;
+    width: 768px;
+    height: 169px;
+    resize: none;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    padding: 18px 14px;
+    outline: none;
+    font-family: inherit;
+}
+
+.textarea-input:hover {
+    border: 1px solid black;
+}
+
+.custom-placeholder::placeholder {
+  font-size: 16px;
+  font-weight:500;
+}
