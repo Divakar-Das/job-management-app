@@ -32,7 +32,6 @@ const JobListPage = () => {
     const handleClose = () => setShowForm(false);
 
     const fetchJobs = () => {
-        // axios.get('http://localhost:5000/api/jobs')
         axios.get('https://job-management-backend-qpo9.onrender.com/api/jobs')
             .then((res) => setJobs(res.data))
             .catch((err) => console.error(err));
@@ -131,7 +130,7 @@ const JobListPage = () => {
                 position: "absolute",
                 display: showForm ? "block" : "none",
                 width: "1440px",
-                height:"1050px",
+                height:"200vh",
                 top: 0,
             }} >
                 <JobForm handleClose={handleClose} refreshJobs={fetchJobs} />

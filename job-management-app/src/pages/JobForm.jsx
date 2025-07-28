@@ -60,14 +60,11 @@ const JobForm = ({ handleClose, refreshJobs }) => {
 
     const onSubmit = async (data) => {
         try {
-            // await axios.post("http://localhost:5000/api/jobs", data);
             await axios.post("https://job-management-backend-qpo9.onrender.com/api/jobs", data);
-            alert("Job published successfully");
             reset();
             refreshJobs();
             handleClose();
         } catch (err) {
-            alert("Error publishing job");
             console.error(err);
         }
     };
