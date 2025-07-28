@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 
 app.use(cors({
-  origin: ['http://localhost:5173','https://job-management-backend-qpo9.onrender.com'],
+  origin: ['http://localhost:5173','https://job-management-app.netlify.app/'],
   methods: ['GET', 'POST', 'DELETE'],
   credentials: true,
 }));
