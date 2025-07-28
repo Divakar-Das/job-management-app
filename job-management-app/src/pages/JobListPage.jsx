@@ -33,7 +33,7 @@ const JobListPage = () => {
 
     const fetchJobs = () => {
         // axios.get('http://localhost:5000/api/jobs')
-        axios.get('https://job-management-backend-qpo9.onrender.com')
+        axios.get('https://job-management-backend-qpo9.onrender.com/api/jobs')
             .then((res) => setJobs(res.data))
             .catch((err) => console.error(err));
     };
